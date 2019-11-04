@@ -4,6 +4,8 @@ How to install :
 
 ```
 microk8s.enable rbac dashboard
+git clone https://github.com/phcollignon/microk8s-dashboard
+cd microk8s-dashboard
 microk8s.kubectl create -f dashboard.yaml
 ``` 
 
