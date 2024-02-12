@@ -17,10 +17,10 @@ Then get the token with
 
 Proxy the dashboard :
 ```
-microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 --address 0.0.0.0
+microk8s.kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 --address 0.0.0.0
 ```
 
 Connect to the dashboard with the token at the following Url :
-`https://1<your-cluster-ip>:10443/`
+`https://<your-cluster-ip>:10443/`
 
 You can also put the token in a config file and load that config file in dashboard login screen. (see example [dashboard.config](dashboard.config))
